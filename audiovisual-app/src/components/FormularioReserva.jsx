@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
-import { verificarDisponibilidade, criarReserva } from "../services/api";
+import { verificarDisponibilidadeAPI, criarReserva } from "../services/api";
 import { calcularTotal, calcularDias } from "../utils/precos";
 
 // Data de hoje no formato AAAA-MM-DD, na hora local
@@ -48,7 +48,7 @@ export default function FormularioReserva({ item }) {
 
         setAVerificar(true);
         try {
-            const resultado = await verificarDisponibilidade(
+            const resultado = await verificarDisponibilidadeAPI(
                 item.id,
                 dataInicio,
                 dataFim,
