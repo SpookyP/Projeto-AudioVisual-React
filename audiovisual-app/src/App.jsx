@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import PaginaPrincipal from './pages/PaginaPrincipal';
-import Detalhes from './pages/Detalhes';
-import Favoritos from './pages/Favoritos';
+import Detalhes from './pages/Detalhes/Detalhes';
+import Favoritos from './pages/Favoritos/Favoritos';
 import MinhasReservas from './pages/MinhasReservas';
 
 function App() {

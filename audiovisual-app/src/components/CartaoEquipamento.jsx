@@ -1,8 +1,10 @@
 import { Link } from 'react-router-dom';
-import { Star } from 'lucide-react';
+import { Star, Heart } from 'lucide-react';
+import { useFavoritos } from '../Context/FavoritosContext.jsx';
 
 export default function CartaoEquipamento({ equipamento }) {
   const { id, nome, imagem, precoDia, avaliacao, tipo, marca } = equipamento;
+  const { isFavorito, toggleFavorito } = useFavoritos();
 
   return (
     <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow flex flex-col justify-between border border-gray-100">
@@ -16,6 +18,19 @@ export default function CartaoEquipamento({ equipamento }) {
           <span className="absolute top-2 left-2 bg-slate-900/80 text-white text-xs px-2.5 py-1 rounded-full uppercase tracking-wider font-semibold">
             {tipo}
           </span>
+
+          <button
+            onClick={() => toggleFavorito(id)}
+            className="absolute top-2 right-2 bg-white rounded-full p-2 shadow-md"
+          >
+            <Heart
+              className={`w-5 h-5 ${
+                isFavorito(id)
+                  ? 'fill-red-500 text-red-500'
+                  : 'text-gray-500'
+              }`}
+            />
+          </button>
         </div>
 
         <div className="p-5">
