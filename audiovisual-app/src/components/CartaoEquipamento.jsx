@@ -41,13 +41,6 @@ export default function CartaoEquipamento({ equipamento }) {
             <Star className="w-4 h-4 fill-amber-500" />
             <span className="text-sm font-semibold text-gray-700">{avaliacao}</span>
           </div>
-
-          <Link
-              to={`/detalhes/${item.id}#reservar`}
-              className="rounded border border-amber-500 px-3 py-2 font-semibold text-amber-600 hover:bg-amber-50"
-          >
-            Reservar
-          </Link>
         </div>
       </div>
 
