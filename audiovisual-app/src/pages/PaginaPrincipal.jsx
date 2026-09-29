@@ -39,7 +39,7 @@ export default function PaginaPrincipal() {
     return equipamentos
       .filter((eq) => {
         const atendeTexto = eq.nome.toLowerCase().includes(textoPesquisa.toLowerCase());
-        const atendeTipo = tipoSelecionado ? eq.tipo?.toLowerCase() === tipoSelecionado.toLowerCase() : true;
+        const atendeTipo = tipoSelecionado ? eq.categoria?.toLowerCase().includes(tipoSelecionado.toLowerCase()) : true;
         const atendeMarca = marcaSelecionada ? eq.marca === marcaSelecionada : true;
         return atendeTexto && atendeTipo && atendeMarca;
       })
