@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8b2faf37-f9d3-4861-81ed-8ab2ca9fafce" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/audiovisual-app/src/components/FormularioReserva.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/audiovisual-app/src/components/FormularioReserva.jsx" afterDir="false" />
-    </list>
+    <list default="true" id="8b2faf37-f9d3-4861-81ed-8ab2ca9fafce" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,7 +56,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "hotfix",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "/home/hyper/PhpstormProjects/SpookyP/Projeto-AudioVisual-React",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -83,9 +81,22 @@
       <updated>1790707634459</updated>
       <workItem from="1790707635507" duration="3536000" />
     </task>
+    <task id="LOCAL-00001" summary="Correção de nomes">
+      <option name="closed" value="true" />
+      <created>1790717199959</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1790717199960</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Correção de nomes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correção de nomes" />
   </component>
 </project>
