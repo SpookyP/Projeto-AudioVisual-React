@@ -3,6 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import { Star, Heart, ArrowLeft } from 'lucide-react';
 import { getEquipamentos } from '../../services/api';
 import { useFavoritos } from '../../Context/FavoritosContext.jsx';
+import FormularioReserva from "../../components/FormularioReserva";
 
 export default function Detalhes() {
   const { id } = useParams();
@@ -149,7 +150,18 @@ export default function Detalhes() {
         </div>
 
       </div>
-      
+
+      {/* Formulário de reserva */}
+      <section
+          id="reservar"
+          className="mt-8 w-full max-w-5xl scroll-mt-24 rounded-xl bg-white p-8 shadow-md"
+      >
+        <h2 className="mb-4 text-2xl font-bold text-gray-900">
+          Reservar este equipamento
+        </h2>
+        <FormularioReserva item={equipamento} />
+      </section>
+
     </div>
   );
 }

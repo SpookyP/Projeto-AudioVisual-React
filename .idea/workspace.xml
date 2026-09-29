@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8b2faf37-f9d3-4861-81ed-8ab2ca9fafce" name="Changes" comment="" />
+    <list default="true" id="8b2faf37-f9d3-4861-81ed-8ab2ca9fafce" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/audiovisual-app/src/components/CartaoEquipamento.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/audiovisual-app/src/components/CartaoEquipamento.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/audiovisual-app/src/components/FormularioReserva.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/audiovisual-app/src/components/FormularioReserva.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/audiovisual-app/src/pages/Detalhes/Detalhes.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/audiovisual-app/src/pages/Detalhes/Detalhes.jsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,7 +60,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "feature/botao-reservar",
     "last_opened_file_path": "/home/hyper/PhpstormProjects/SpookyP/Projeto-AudioVisual-React",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",

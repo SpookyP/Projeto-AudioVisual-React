@@ -35,7 +35,7 @@ export default function FormularioReserva({ item }) {
     ]);
 
     const dias = calcularDias(dataInicio, dataFim);
-    const total = calcularTotal(item.preco, dataInicio, dataFim, Number(quantidade));
+    const total = calcularTotal(item.precoDia, dataInicio, dataFim, Number(quantidade));
 
     // Se o utilizador mudar datas ou quantidade, a verificação anterior deixa de valer
     useEffect(() => {
@@ -169,7 +169,7 @@ export default function FormularioReserva({ item }) {
             {total > 0 && (
                 <div className="rounded bg-gray-100 p-3">
                     <p>
-                        {item.preco} € × {dias} {dias === 1 ? "dia" : "dias"} × {quantidade}
+                        {item.precoDia} € × {dias} {dias === 1 ? "dia" : "dias"} × {quantidade}
                     </p>
                     <p className="text-lg font-bold">Total: {total.toFixed(2)} €</p>
                 </div>
