@@ -32,10 +32,10 @@ export default function BarraPesquisaFiltros({
           className="w-full md:w-auto px-3 py-2.5 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-amber-500 text-sm bg-white"
         >
           <option value="">Todos os Tipos</option>
-          <option value="câmara">Câmara</option>
-          <option value="drone">Drone</option>
-          <option value="iluminação">Iluminação</option>
-          <option value="som">Som</option>
+          <option value="Câmara">Câmara</option>
+          <option value="Drone">Drone</option>
+          <option value="Iluminação">Iluminação</option>
+          <option value="Som">Som</option>
         </select>
 
         <select
