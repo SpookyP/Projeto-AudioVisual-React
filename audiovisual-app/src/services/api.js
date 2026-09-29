@@ -1,4 +1,5 @@
 const API_URL = 'http://localhost:3001/audiovisual';
+
 /**
  * GET /itens
  * Devuelve a lista completa de equipamentos
@@ -38,10 +39,6 @@ export const verificarDisponibilidadeAPI = async (id, inicio, fim, quantidade) =
   // Devolve { disponivel: true } ou { disponivel: false }
   return await response.json();
 };
-
-// ==========================================
-// 2. RESERVAS
-// ==========================================
 
 /**
  * GET /reservas
@@ -90,4 +87,24 @@ export const cancelarReserva = async (idReserva) => {
 
   // Resposta 204 não tem corpo (sem json)
   return true;
+};
+
+/**
+ * PATCH /{tema}/itens/{id}
+ * Adicionar ou alterar a imagem de um equipamento
+ */
+export const atualizarImagemEquipamento = async (id, novaImagemUrl) => {
+  const response = await fetch(`${API_URL}/${TEMA}/itens/${id}`, {
+    method: 'PATCH',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ imagem: novaImagemUrl }),
+  });
+
+  if (!response.ok) {
+    throw new Error('Erro ao atualizar a imagem do equipamento.');
+  }
+
+  return await response.json();
 };

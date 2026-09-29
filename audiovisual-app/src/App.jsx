@@ -8,7 +8,6 @@ function App() {
   return (
     <BrowserRouter>
       <div className="min-h-screen bg-gray-50 font-sans">
-        {/* Navbar Global */}
         <header className="bg-slate-900 text-white shadow-md">
           <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
             <Link to="/" className="text-2xl font-bold text-amber-500">
@@ -28,7 +27,6 @@ function App() {
           </div>
         </header>
 
-        {/* Conteúdo das Páginas */}
         <main className="max-w-7xl mx-auto px-4 py-8">
           <Routes>
             <Route path="/" element={<PaginaPrincipal />} />
