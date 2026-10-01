@@ -1,8 +1,8 @@
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-import PaginaPrincipal from './pages/PaginaPrincipal';
-import Detalhes from './pages/Detalhes/Detalhes';
-import Favoritos from './pages/Favoritos/Favoritos';
-import MinhasReservas from './pages/MinhasReservas';
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import PaginaPrincipal from "./pages/PaginaPrincipal";
+import Detalhes from "./pages/Detalhes/Detalhes";
+import Favoritos from "./pages/Favoritos/Favoritos";
+import MinhasReservas from "./pages/MinhasReservas";
 
 function App() {
   return (
@@ -14,13 +14,22 @@ function App() {
               AudioVisual Rent
             </Link>
             <nav className="flex gap-6">
-              <Link to="/" className="hover:text-amber-400 font-medium transition">
+              <Link
+                to="/"
+                className="hover:text-amber-400 font-medium transition"
+              >
                 Catálogo
               </Link>
-              <Link to="/favoritos" className="hover:text-amber-400 font-medium transition">
+              <Link
+                to="/favoritos"
+                className="hover:text-amber-400 font-medium transition"
+              >
                 Favoritos
               </Link>
-              <Link to="/minhas-reservas" className="hover:text-amber-400 font-medium transition">
+              <Link
+                to="/minhas-reservas"
+                className="hover:text-amber-400 font-medium transition"
+              >
                 As Minhas Reservas
               </Link>
             </nav>

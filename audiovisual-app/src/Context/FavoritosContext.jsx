@@ -29,7 +29,7 @@ export function FavoritosProvider({ children }) {
 
   const removeFavorito = (itemId) => {
     setFavoritos((currentFavoritos) =>
-      currentFavoritos.filter((id) => id !== itemId)
+      currentFavoritos.filter((id) => id !== itemId),
     );
   };
 
