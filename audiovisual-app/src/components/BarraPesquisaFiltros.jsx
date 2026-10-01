@@ -1,4 +1,4 @@
-import { Search } from 'lucide-react';
+import { Search } from "lucide-react";
 
 export default function BarraPesquisaFiltros({
   textoPesquisa,
@@ -9,11 +9,10 @@ export default function BarraPesquisaFiltros({
   setMarcaSelecionada,
   ordenacao,
   setOrdenacao,
-  marcasDisponiveis = []
+  marcasDisponiveis = [],
 }) {
   return (
     <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 mb-8 flex flex-col md:flex-row gap-4 justify-between items-center">
-
       <div className="relative w-full md:w-1/3">
         <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5" />
         <input
